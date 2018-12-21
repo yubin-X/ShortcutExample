@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        registerShortcut()
         return true
     }
 
@@ -40,7 +41,136 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 
+
+extension AppDelegate {
+    
+    
+    /*
+     when there are less than 4 shortitem ,they all will be displayed. otherwise, only for shortitem can be displayed
+     */
+    
+    
+    // register shortcut item
+    func registerShortcut() {
+        var items = [UIApplicationShortcutItem]()
+        for index in 0..<3 {
+            
+            // get system shortcut IconType from enumeration rawvalue
+            let iconType = UIApplicationShortcutIcon.IconType.init(rawValue: index) ?? .compose
+            // new a system shortcut icon
+            let icon = UIApplicationShortcutIcon.init(type: iconType)
+            // new a shortcut item
+            let item = UIApplicationShortcutItem(type: iconType.description, localizedTitle: iconType.description, localizedSubtitle: nil, icon: icon, userInfo: nil)
+            items.append(item)
+        }
+        UIApplication.shared.shortcutItems = items
+    }
+    
+    // handle shortcut item
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        switch shortcutItem.type {
+        case "compose":
+            print("Handle specified type:\(shortcutItem.type)")
+        default:
+            print("Default handle:\(shortcutItem.type)")
+        }
+    }
+}
+
+extension UIApplicationShortcutIcon.IconType {
+    
+    var description:String {
+        switch self {
+            
+        case .compose:
+            return "compose"
+            
+        case .play:
+            return "play"
+            
+        case .pause:
+            return "pause"
+            
+        case .add:
+            return "add"
+            
+        case .location:
+            return "location"
+            
+        case .search:
+            return "search"
+            
+        case .share:
+            return "share"
+            
+        case .prohibit:
+            return "prohibit"
+            
+        case .contact:
+            return "contact"
+            
+        case .home:
+            return "home"
+            
+        case .markLocation:
+            return "markLocation"
+            
+        case .favorite:
+            return "favorite"
+            
+        case .love:
+            return "love"
+            
+        case .cloud:
+            return "cloud"
+            
+        case .invitation:
+            return "invitation"
+            
+        case .confirmation:
+            return "confirmation"
+            
+        case .mail:
+            return "mail"
+            
+        case .message:
+            return "message"
+            
+        case .date:
+            return "date"
+            
+        case .time:
+            return "time"
+            
+        case .capturePhoto:
+            return "capturePhoto"
+            
+        case .captureVideo:
+            return "captureVideo"
+            
+        case .task:
+            return "task"
+            
+        case .taskCompleted:
+            return "taskCompleted"
+            
+        case .alarm:
+            return "alarm"
+            
+        case .bookmark:
+            return "bookmark"
+            
+        case .shuffle:
+            return "shuffle"
+            
+        case .audio:
+            return "audio"
+            
+        case .update:
+            return "update"
+            
+        }
+    }
+}

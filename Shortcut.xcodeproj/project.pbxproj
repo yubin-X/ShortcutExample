@@ -14,6 +14,8 @@
 		18AC46ED21CCCBC500F354A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AC46EB21CCCBC500F354A7 /* LaunchScreen.storyboard */; };
 		18AC46F821CCCBC500F354A7 /* ShortcutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AC46F721CCCBC500F354A7 /* ShortcutTests.swift */; };
 		18AC470321CCCBC500F354A7 /* ShortcutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AC470221CCCBC500F354A7 /* ShortcutUITests.swift */; };
+		18AC471121CCDD8700F354A7 /* default2.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC471021CCDD8700F354A7 /* default2.png */; };
+		18AC471321CCDE2A00F354A7 /* diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC471221CCDE2A00F354A7 /* diamond.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		18AC46FE21CCCBC500F354A7 /* ShortcutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShortcutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AC470221CCCBC500F354A7 /* ShortcutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutUITests.swift; sourceTree = "<group>"; };
 		18AC470421CCCBC500F354A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18AC471021CCDD8700F354A7 /* default2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = default2.png; path = ../../../../Downloads/default2.png; sourceTree = "<group>"; };
+		18AC471221CCDE2A00F354A7 /* diamond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diamond.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				18AC46E221CCCBC300F354A7 /* AppDelegate.swift */,
+				18AC471021CCDD8700F354A7 /* default2.png */,
+				18AC471221CCDE2A00F354A7 /* diamond.png */,
 				18AC46E421CCCBC300F354A7 /* ViewController.swift */,
 				18AC46E621CCCBC300F354A7 /* Main.storyboard */,
 				18AC46E921CCCBC500F354A7 /* Assets.xcassets */,
@@ -229,8 +235,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18AC471321CCDE2A00F354A7 /* diamond.png in Resources */,
 				18AC46ED21CCCBC500F354A7 /* LaunchScreen.storyboard in Resources */,
 				18AC46EA21CCCBC500F354A7 /* Assets.xcassets in Resources */,
+				18AC471121CCDD8700F354A7 /* default2.png in Resources */,
 				18AC46E821CCCBC300F354A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,7 +441,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TPZU59J8D6;
 				INFOPLIST_FILE = Shortcut/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +460,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TPZU59J8D6;
 				INFOPLIST_FILE = Shortcut/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
