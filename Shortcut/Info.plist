@@ -34,6 +34,17 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIApplicationShortcutItem</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutTitle</key>
+			<string>添加</string>
+			<key>UIApplicationShortcutIcon</key>
+			<string>add</string>
+			<key>UIApllicationShortcutType</key>
+			<string>type</string>
+		</dict>
+	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

@@ -16,6 +16,7 @@
 		18AC470321CCCBC500F354A7 /* ShortcutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AC470221CCCBC500F354A7 /* ShortcutUITests.swift */; };
 		18AC471121CCDD8700F354A7 /* default2.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC471021CCDD8700F354A7 /* default2.png */; };
 		18AC471321CCDE2A00F354A7 /* diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC471221CCDE2A00F354A7 /* diamond.png */; };
+		18AC471521CCE9C300F354A7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 18AC471421CCE9C300F354A7 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		18AC470421CCCBC500F354A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18AC471021CCDD8700F354A7 /* default2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = default2.png; path = ../../../../Downloads/default2.png; sourceTree = "<group>"; };
 		18AC471221CCDE2A00F354A7 /* diamond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diamond.png; sourceTree = "<group>"; };
+		18AC471421CCE9C300F354A7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		18AC46D621CCCBC300F354A7 = {
 			isa = PBXGroup;
 			children = (
+				18AC471421CCE9C300F354A7 /* README.md */,
 				18AC46E121CCCBC300F354A7 /* Shortcut */,
 				18AC46F621CCCBC500F354A7 /* ShortcutTests */,
 				18AC470121CCCBC500F354A7 /* ShortcutUITests */,
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18AC471521CCE9C300F354A7 /* README.md in Resources */,
 				18AC471321CCDE2A00F354A7 /* diamond.png in Resources */,
 				18AC46ED21CCCBC500F354A7 /* LaunchScreen.storyboard in Resources */,
 				18AC46EA21CCCBC500F354A7 /* Assets.xcassets in Resources */,
